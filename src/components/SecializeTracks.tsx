@@ -1,11 +1,9 @@
 "use client"
 import React, { useState } from 'react'
-// import metaverse from "@/assets/metaverse.png";
 import ai from "../assets/images/ai.png";
 import cnc from "../assets/images/cnc.png";
 import iot from "../assets/images/iot.png";
-// import genetics from "@/assets/gbs.png";
-// import network from "@/assets/network.png";
+
 import Image from "next/image";
 import Container from './Container';
 import Quarter from './Quarter';
@@ -157,7 +155,10 @@ const SecializeTracks = () => {
 
             <h4 className='text-[#00616C] font-medium text-[0.875rem]'>Specialized Program</h4>
             <h3 className=' text-black font-bold max-w-[600px] text-2xl mb-3'>{selectedItemData?.header}</h3>
-            <Image className='w-[400px] h-auto mx-auto' src={selectedItemData?.image} alt=""/>
+            <Image className='w-[400px] h-auto mx-auto'    
+             src={selectedItemData?.image|| ''} 
+          
+ alt=""/>
 
             <p className='mt-3'>
             {selectedItemData?.description}{" "}
